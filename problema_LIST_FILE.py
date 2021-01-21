@@ -12,7 +12,7 @@ Se citesc elementele unei liste,din documentul input.txt, care reprezintă numer
 	Să se afișeze lista nou-formată. / lista5
 """
 with open("input.txt","r") as f:
-    x=f.readline()
+    x=map(int,f.readline())
     lista1=(list(x))
     print("lista initiala =",lista1)
     lista2=sorted(lista1)
